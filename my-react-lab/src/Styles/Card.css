@@ -1,0 +1,93 @@
+/* General Reset */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* ID Card Styling */
+.id-card {
+    width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.id-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Header */
+.card-header {
+    background: linear-gradient(90deg, #0077cc, #005fa3);
+    color: white;
+    padding: 20px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Image Container */
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #0077cc;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* Info Section */
+.info {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.info p {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info strong {
+    color: #005fa3;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Add subtle card spacing */
+.info span {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Additional Styling */
+@media screen and (max-width: 768px) {
+    .id-card {
+        width: 90%;
+        font-size: 0.9em;
+    }
+}
+
+
+
