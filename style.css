@@ -1,0 +1,17 @@
+.heading2{
+    font-size:40px;
+    color: blue;
+    text-align: center;
+}
+
+h1{
+
+    color: brown;
+}
+
+body{
+    background-color: aqua;
+    border-style: groove;
+    border-color: blueviolet;
+    border-radius: 50px;
+}
