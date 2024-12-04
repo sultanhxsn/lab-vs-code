@@ -1,0 +1,82 @@
+/* Statistics.css */
+
+.statistics-container {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #e6e6e6;
+  }
+  
+  .statistics-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 24px; /* Adds space below the title */
+    text-align: center;
+  }
+  
+  .stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 16px; /* Adds spacing between stats */
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .stat-item:last-child {
+    margin-bottom: 0; /* Removes spacing after the last item */
+    border-bottom: none;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: #555555;
+    font-weight: 500;
+  }
+  
+  .stat-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  .progress-bar-section {
+    margin-top: 24px; /* Adds space above the progress bar */
+  }
+  
+  .progress-bar-label {
+    font-size: 1rem;
+    color: #555555;
+    font-weight: 500;
+    margin-bottom: 8px; /* Adds space below the label */
+  }
+  
+  .progress-bar-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 16px;
+    margin-bottom: 8px; /* Adds spacing below the progress bar */
+    border: 1px solid #e6e6e6;
+  }
+  
+  .progress-bar-fill {
+    background-color: #4caf50; /* Green for the active percentage bar */
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .progress-bar-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+  }
+  
+  
+  

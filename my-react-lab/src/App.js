@@ -1,13 +1,39 @@
 import React from 'react';
 import './Styles/App.css'; 
-import Card from './Components/Card.js';
+import './Styles/Dashboard.css';
+import UserInfo from './Components/UserInfo.js';
+import Statistics from './Components/Statistics.js';
+import Messages from './Components/Messages.js';
 
-function App() {
+
+const Dashboard = () => {
+  const user = {
+    name: "Butt Saab",
+    email: "buttsaab@gmail.com",
+    role: "Administrator",
+    image: "https://pbs.twimg.com/media/CIcBj0hWoAAJRyJ.jpg"
+    };
+
+  const stats = {
+    totalUsers: 221409,
+    activeUsers: 420,
+    newSignups: 25,
+    activePercentage: "50%"
+    };
+
+  const messages = [
+    'Biryani or Beef Pulao?',
+    'Dostoevsky or Allen Poe?',
+    'Rimac or Koeniggseg?'
+  ];
   return (
-    <div>
-      <Card name="Nainitalwala" age={40} occupation="Parchoon Ki Dukan" location="Dhoraji" image="image.jpg"/>
+    <div className="dashboard-container">
+      <h1 className="dashboard-title">Admin Dashboard</h1>
+      <UserInfo {...user} />
+      <Statistics {...stats} />
+      <Messages messages={messages} />
     </div>
   );
 }
 
-export default App;
+export default Dashboard;
