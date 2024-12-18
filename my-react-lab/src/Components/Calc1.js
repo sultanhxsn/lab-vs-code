@@ -2,28 +2,33 @@ import React, { useState } from 'react';
 function Calc1() {
 const [num1, setNum1] = useState('');
 const [num2, setNum2] = useState('');
-let sum = 0;
+const [add, setAdd] = useState();
+const [sub, setSub] = useState();
+const [mult, setMult] = useState();
+const [div, setDiv] = useState();
 
 const Add = () => {
     const number = parseFloat(num1);
     const number2 = parseFloat(num2);
-    sum = number+number2;
-    return sum;
+    setAdd(number+number2);
 };
 
 const Sub = () => {
-    sum = num1-num2;
-    return sum;
+    const number = parseFloat(num1);
+    const number2 = parseFloat(num2);
+    setSub(number-number2);
 };
 
 const Mult = () => {
-    sum = num1*num2;
-    return sum;
+    const number = parseFloat(num1);
+    const number2 = parseFloat(num2);
+    setMult(number*number2);
 };
 
 const Div = () => {
-    sum = num1/num2;
-    return sum;
+    const number = parseFloat(num1);
+    const number2 = parseFloat(num2);
+    setDiv(number/number2);
 };
 
 
@@ -44,13 +49,22 @@ placeholder="Enter second number"
 value={num2}
 onChange={(e) => setNum2(e.target.value)}
 />
-
+<br></br>
 <button onClick={Add}>Add</button>
+<p>
+result is: {add}
+</p>
 <button onClick={Sub}>Subtract</button>
+<p>
+result is: {sub}
+</p>
 <button onClick={Mult}>Multiply</button>
+<p>
+result is: {mult}
+</p>
 <button onClick={Div}>Divide</button>
 <p>
-result is: {sum}
+result is: {div}
 </p>
 </div>
 );
