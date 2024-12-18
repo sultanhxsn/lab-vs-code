@@ -1,39 +1,31 @@
-import React from 'react';
-import './Styles/App.css'; 
-import './Styles/Dashboard.css';
-import UserInfo from './Components/UserInfo.js';
-import Statistics from './Components/Statistics.js';
-import Messages from './Components/Messages.js';
+import React from "react";
+import Navbar from "./Components/Navbar";
+import LandingPage from "./Components/LandingPage";
+import SpecialtyMenu from "./Components/SpecialtyMenu";
+import Footer from "./Components/Footer";
+import Counter from "./Components/Counter";
+import InputName from "./Components/Calculator";
+import NameAge from "./Components/NameAge";
+import QuizApp from "./Components/QuizApp";
+import Calculator from "./Components/Calculator";
+import LoginForm from "./Components/LoginForm";
+import Counter1 from './Components/Counter1';
+import Calc1 from "./Components/Calc1";
 
-
-const Dashboard = () => {
-  const user = {
-    name: "Butt Saab",
-    email: "buttsaab@gmail.com",
-    role: "Administrator",
-    image: "https://pbs.twimg.com/media/CIcBj0hWoAAJRyJ.jpg"
-    };
-
-  const stats = {
-    totalUsers: 221409,
-    activeUsers: 420,
-    newSignups: 25,
-    activePercentage: "50%"
-    };
-
-  const messages = [
-    'Biryani or Beef Pulao?',
-    'Dostoevsky or Allen Poe?',
-    'Rimac or Koeniggseg?'
+function App() {
+  const menuItems = [
+    { title: "Spicy Chicken Wings", description: "Our signature spicy wings", price: 500 },
+    { title: "Classic Fried Chicken", description: "Traditional recipe", price: 350 },
+    { title: "Spicy Chicken Wings", description: "Our signature spicy wings", price: 650 },
   ];
+
   return (
-    <div className="dashboard-container">
-      <h1 className="dashboard-title">Admin Dashboard</h1>
-      <UserInfo {...user} />
-      <Statistics {...stats} />
-      <Messages messages={messages} />
+    <div>
+      <Counter1 />
+      <Calc1 />
     </div>
   );
 }
 
-export default Dashboard;
+export default App;
+

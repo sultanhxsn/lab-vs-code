@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #800000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 50px; /* Adjust the size of the logo */
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%; /* Optional: Makes the logo circular */
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .order-btn {
+    background-color: yellow;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px; /* Adds spacing between the last link and the button */
+  }
+  
+  
+  
+  
+  
+  

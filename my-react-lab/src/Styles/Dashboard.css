@@ -7,7 +7,7 @@
     gap: 40px; /* Adds space between the components */
     padding: 40px 20px;
     background-color: #041629; /* Soft light blue for dashboard background */
-    min-height: 100vh; /* Ensures the background covers the entire viewport */
+    /* min-height: 100vh; Ensures the background covers the entire viewport */
     
   }
   
@@ -18,5 +18,3 @@
     margin-bottom: 20px;
     text-align: center;
   }
-
-  

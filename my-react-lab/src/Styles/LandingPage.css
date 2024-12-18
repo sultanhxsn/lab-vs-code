@@ -1,0 +1,44 @@
+.landing-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 190px;
+    background-color: #800000;
+    color: white;
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .highlight {
+    color: orange;
+  }
+  
+  .order-now-btn {
+    background-color: yellow;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+  }
+  
+  .rounded-image {
+    width: 100%;
+    height: auto;
+    border-radius: 180px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  
+  
